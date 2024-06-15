@@ -1,6 +1,3 @@
-// this is just a test thing dw about it
-// this file is there to handle spaghetti code and tie it all together 
-
 const broadcasts = {};
 function addAction(name, callback) {
     if (!(name in broadcasts)) {

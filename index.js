@@ -1,6 +1,5 @@
 import "./util/keyManager"
 import "./features/pingGlide"
-import "./features/etherwarp"
 import "./features/blockhighlight"
 import "./features/waypoints"
 import "./features/miningtracker"

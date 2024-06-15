@@ -11,6 +11,8 @@
 §d/export: §fexports waypoints to clipboard  
 §d/skip [#]: §fskip [#] waypoints ahead  
 §d/unskip [#]: §fskip [#] waypoints back  
+  
+§4Requires BlingBling Addons Routing:  
 §d/sb [block]: §fset all waypoints to [block] ("minecraft:___")  
 
 > Pro Tip: You can switch between ordered and regular waypoints in the settings menu!
@@ -21,7 +23,7 @@ Set §6Delay§f to your ping, and begin mining the next block when you hear the 
 To enter sounds, §cuse 1.8.9 sounds§f, which can be found [here](https://www.minecraftforum.net/forums/mapping-and-modding-java-edition/mapping-and-modding-tutorials/2213619-1-8-all-playsound-sound-arguments).
 
 ## §6Structure Check
-
+§4Requires BlingBling Addons Struc Check:  
 §d/lrg: §floads a regular route from clipboard and automatically detects nearby veins for struc check format  
 §d/lr: §floads structure check format from clipboard, or a regular route for converting to struc check format manually  
 §d/ur: §funloads the structure check route  

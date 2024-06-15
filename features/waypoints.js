@@ -40,7 +40,7 @@ function loadRoute() {
     try {
         route = JSON.parse(clipboardData);
 
-        if (!route.every(waypoint => {return waypoint.options?.hasOwnProperty("name")})) {
+        if (!route.every(waypoint => { return waypoint.options?.hasOwnProperty("name") })) {
             ChatLib.chat(`§d[BlingBling Addons] §fDetected DilloPro route. Converting to ColeWeight...`);
             route = route.map((obj, index) => {
                 if (!obj.options) {
@@ -127,15 +127,6 @@ register('command', (message) => {
     ChatLib.chat(`§d[BlingBling Addons] §fwent back ${message} waypoints`);
 }).setName('unskip');
 
-register('command', (message) => {
-    if (Client.getMinecraft().field_71442_b.func_178889_l().func_77145_d()) { // if creative mode
-        ChatLib.chat(`§d[BlingBling Addons] §fPlacing blocks!`);
-        for (let i = 0; i < route.length; i++) {
-            ChatLib.command(`setblock ${route[i].x} ${route[i].y} ${route[i].z} ${message}`, false);
-        }
-    }
-}).setName('setblocks').setAliases(['sb']);
-
 // ====== functionality
 
 register("worldLoad", () => {
@@ -209,7 +200,7 @@ register('renderWorld', () => {
             drawText(route[currentWp].options.name, route[currentWp], settings().waypointTextColor);
             drawText(route[previousWp].options.name, route[previousWp], settings().waypointTextColor);
         }
-        
+
         if (Client.getKeyBindFromDescription("Draw line to current Waypoint").isKeyDown()) {
             drawTrace(route[currentWp], settings().orderedLineColor);
             drawDistText(Math.round(BlingPlayer.calcDist(route[currentWp].x + 0.5, route[currentWp].y, route[currentWp].z + 0.5)) + "m", route[currentWp], settings().waypointTextColor);
@@ -217,3 +208,4 @@ register('renderWorld', () => {
     }
 })
 
+export { route };
