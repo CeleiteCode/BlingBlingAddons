@@ -428,27 +428,27 @@ config
         configName: "gemMiningSpeed",
         title: "Gemstone Mining Speed",
         description: "enter your gemstone mining speed",
-        value: "0",
-        placeHolder: "0",
-        subcategory: "i'm dumb, we'll import stats later §d<3"
+        value: "9701",
+        placeHolder: "9701",
+        subcategory: "i'm dumb, we'll import stats later §d<3§4 don't put in 0 I will eat you"
     })
     .addTextInput({
         category: "Mining Stats",
         configName: "gemFortune",
         title: "Gemstone Fortune",
         description: "enter your gemstone fortune",
-        value: "0",
-        placeHolder: "0",
-        subcategory: "i'm dumb, we'll import stats later §d<3"
+        value: "2456",
+        placeHolder: "2456",
+        subcategory: "i'm dumb, we'll import stats later §d<3§4 don't put in 0 I will eat you"
     })
     .addTextInput({
         category: "Mining Stats",
         configName: "pristine",
         title: "Pristine",
         description: "enter your pristine",
-        value: "0",
-        placeHolder: "0",
-        subcategory: "i'm dumb, we'll import stats later §d<3"
+        value: "18.63",
+        placeHolder: "18.63",
+        subcategory: "i'm dumb, we'll import stats later §d<3§4 don't put in 0 I will eat you"
     })
     .addSwitch({
         category: "Mining Stats",
@@ -456,7 +456,7 @@ config
         title: "Blue Cheese",
         description: "toggle on if you have a Blue Cheese Goblin Omelette",
         value: true,
-        subcategory: "i'm dumb, we'll import stats later §d<3"
+        subcategory: "i'm dumb, we'll import stats later §d<3§4 don't put in 0 I will eat you"
     })
     .addSwitch({
         category: "Render",

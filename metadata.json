@@ -2,7 +2,7 @@
     "name": "BlingBlingAddons",
     "description": "the BEST mod",
     "creator": "blingbling, Celeite",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "entry": "index.js",
     "requires": [
         "Draggable",
